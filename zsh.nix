@@ -50,8 +50,10 @@
     GCM_CREDENTIAL_STORE = "gpg";
   };
   shellAliases = {
-    ll = "ls -l";
-    la = "ls -la";
+    ll = "ls -hl";
+    la = "ls -hla";
+	lsdisk = "lsblk";
+	memory = "df -hT";
     vim = "nvim";
     suspend = "systemctl suspend";
     sysc = "sudo vim ~sconf/configuration.nix";
