@@ -1,5 +1,6 @@
 { pkgs, ... }: {
 	enable = true;
+	viAlias = true;
 	coc.enable = true;
 	coc.settings = {
 		"outline.autoWidth" = false;
@@ -29,10 +30,16 @@
 		vim.opt.shiftwidth = 4;
 		vim.opt.wrap = false;
 		vim.cmd.colorscheme("slate");
-		vim.opt_local.textwidth = 0;
+		vim.opt.textwidth = 0;
+		vim.opt.scrolloff = 8;
+		vim.opt.formatoptions = "blj";
 	'';
-	plugins = [
+	plugins = with pkgs.vimPlugins; [
+		LazyVim
+		# lazy-nvim
 		pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+		/*
 		pkgs.vimPlugins.ale
+		*/
 	];
 }

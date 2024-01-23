@@ -50,6 +50,10 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/nvim" = {
+    	source = ./lazyvim;
+	recursive = true;
+    }
   };
 
   # You can also manage environment variables but you will have to manually

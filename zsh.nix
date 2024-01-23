@@ -54,7 +54,7 @@
     la = "ls -hla";
 	lsdisk = "lsblk";
 	memory = "df -hT";
-    vim = "nvim";
+    nv= "nvim";
     suspend = "systemctl suspend";
     sysc = "sudo vim ~sconf/configuration.nix";
     usrc = "vim ~uconf/home.nix";
