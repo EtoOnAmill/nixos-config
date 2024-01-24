@@ -1,6 +1,6 @@
 {
   enable = true;
-  enableAutosuggestions = true; 
+  enableAutosuggestions = true;
   enableCompletion = true;
 
   # plugin managers

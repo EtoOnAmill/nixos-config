@@ -18,7 +18,47 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    helix
+    (vim_configurable.customize{
+        name = "vim";
+        vimrcConfig.customRC = ''
+            set autoindent
+            colorscheme slate
+            set number
+            set relativenumber
+            syntax enable
+        '';
+    })
+    # lazyvim stuff
+    #neovim
+    ripgrep
+    fd
+    tree-sitter
+    nerdfonts
+    xclip
+    # terminal 
+    #zsh
+    #kitty
+    rxvt-unicode
+    htop
+    zip
+    # git
+    #git
+    git-credential-manager
+    pinentry
+    gnupg
+    # audio
+    pavucontrol
+    audacious
+    # gui
+    firefox
+    bspwm
+    sxhkd
+    lemonbar
+    # util
+    gscreenshot
+    wpa_supplicant_gui
+    virt-manager
+
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
