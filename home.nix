@@ -94,6 +94,14 @@
     	source = ./lazyvim;
 	recursive = true;
     };
+    ".config/bspwm" = {
+    	source = ./bspwm;
+	recursive = true;
+    };
+    ".config/sxhkd" = {
+    	source = ./sxhkd;
+	recursive = true;
+    };
   };
 
   # You can also manage environment variables but you will have to manually
