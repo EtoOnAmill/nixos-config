@@ -1,5 +1,5 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+--require("config.lazy")
 vim.opt.number = true;
 vim.opt.relativenumber = true;
 vim.opt.autoindent = true;
@@ -12,3 +12,4 @@ vim.cmd.colorscheme("slate");
 vim.opt.textwidth = 0;
 vim.opt.scrolloff = 8;
 vim.opt.formatoptions = "blj";
+vim.keymap.set("n", "<C-E>", ":e %:h<CR>", {noremap = true, silent = true})

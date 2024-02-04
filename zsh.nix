@@ -52,13 +52,15 @@
   shellAliases = {
     ll = "ls -hl";
     la = "ls -hla";
-	lsdisk = "lsblk";
-	memory = "df -hT";
-    nv= "nvim";
+    lsdisk = "lsblk";
+    memory = "df -hT";
+    nv = "nvim --noplugin";
+    nixsp = "nix-shell -p";
     suspend = "systemctl suspend";
     sysc = "sudo vim ~sconf/configuration.nix";
     usrc = "vim ~uconf/home.nix";
     sysu = "sudo nixos-rebuild switch";
     usru = "home-manager switch";
+    garbage-collect = "sudo nix-collect-garbage -d && nix-collect-garbage -d ";
   };
 }

@@ -22,11 +22,22 @@
         name = "vim";
         vimrcConfig.customRC = ''
             set autoindent
-            colorscheme slate
+			set tabstop=4
+			set textwidth=0
+
             set number
             set relativenumber
+			set scrolloff=8
+
             syntax enable
+
+			set formatoptions=bl
+
+			map <C-E> :e %:p:h<CR>
+
+            colorscheme sorbet
         '';
+		# nice colorschemes: slate, sorbet, wildcharm(desaturated)
     })
     # lazyvim stuff
     #neovim
@@ -36,8 +47,6 @@
     nerdfonts
     xclip
     # terminal 
-    #zsh
-    #kitty
     rxvt-unicode
     htop
     zip
@@ -58,6 +67,10 @@
     gscreenshot
     wpa_supplicant_gui
     virt-manager
+    # programming
+    zig
+    cargo
+    gcc
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
@@ -91,16 +104,16 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".config/nvim" = {
-    	source = ./lazyvim;
-	recursive = true;
+        source = ./lazyvim;
+        recursive = true;
     };
     ".config/bspwm" = {
     	source = ./bspwm;
-	recursive = true;
+        recursive = true;
     };
     ".config/sxhkd" = {
-    	source = ./sxhkd;
-	recursive = true;
+        source = ./sxhkd;
+        recursive = true;
     };
   };
 

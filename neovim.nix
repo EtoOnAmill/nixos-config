@@ -33,6 +33,7 @@
 		vim.opt.textwidth = 0;
 		vim.opt.scrolloff = 8;
 		vim.opt.formatoptions = "blj";
+		vim.keymap.set("n", "<C-E>", ":e %:h", { noremap = true, silent = true } )
 	'';
 	plugins = with pkgs.vimPlugins; [
 		LazyVim
