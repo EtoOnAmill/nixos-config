@@ -1,12 +1,7 @@
 { pkgs, ... }: {
 	enable = true;
 	viAlias = true;
-	coc.enable = true;
-	coc.settings = {
-		"outline.autoWidth" = false;
-		"outline.previewMaxWidth" = false;
-		"dialog.maxWidth" = 0;
-	};
+	coc.enable = false;
 	/*
 	extraConfig = ''
 		set number
@@ -19,7 +14,6 @@
 		set textwidth=0
 		colorscheme slate
 	'';
-	*/
 	extraLuaConfig = ''
 		vim.opt.number = true;
 		vim.opt.relativenumber = true;
@@ -35,12 +29,10 @@
 		vim.opt.formatoptions = "blj";
 		vim.keymap.set("n", "<C-E>", ":e %:h", { noremap = true, silent = true } )
 	'';
+	*/
 	plugins = with pkgs.vimPlugins; [
-		LazyVim
-		# lazy-nvim
-		pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-		/*
-		pkgs.vimPlugins.ale
-		*/
+		# LazyVim
+		lazy-nvim
+		nvim-treesitter.withAllGrammars
 	];
 }

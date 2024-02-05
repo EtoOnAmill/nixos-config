@@ -40,7 +40,6 @@
 		# nice colorschemes: slate, sorbet, wildcharm(desaturated)
     })
     # lazyvim stuff
-    #neovim
     ripgrep
     fd
     tree-sitter
@@ -51,7 +50,6 @@
     htop
     zip
     # git
-    #git
     git-credential-manager
     pinentry
     gnupg
@@ -104,7 +102,7 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".config/nvim" = {
-        source = ./lazyvim;
+        source = ./nvim;
         recursive = true;
     };
     ".config/bspwm" = {
