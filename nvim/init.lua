@@ -1,4 +1,4 @@
-require("lazy").setup("plugins")
+require("lazy").setup("plugin")
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -12,4 +12,4 @@ vim.cmd.colorscheme("slate")
 vim.opt.textwidth = 0
 vim.opt.scrolloff = 8
 vim.opt.formatoptions = "blj"
-vim.keymap.set("n", "<C-E>", ":e %:h<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<C-E>", ":e .<CR>", {noremap = true, silent = true})
