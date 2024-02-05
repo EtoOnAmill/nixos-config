@@ -52,6 +52,8 @@
   shellAliases = {
     ll = "ls -hl";
     la = "ls -hla";
+	dupk = "kitty &";
+	dupu = "urxvt &";
     lsdisk = "lsblk";
     memory = "df -hT";
     nv = "nvim --noplugin";

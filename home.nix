@@ -101,10 +101,12 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+
     ".config/nvim" = {
         source = ./nvim;
         recursive = true;
     };
+
     ".config/bspwm" = {
     	source = ./bspwm;
         recursive = true;
