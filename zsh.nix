@@ -56,11 +56,11 @@
 	dupu = "urxvt &";
     lsdisk = "lsblk";
     memory = "df -hT";
-    nv = "nvim --noplugin";
+    nv = "nvim ./";
     nixsp = "nix-shell -p";
     suspend = "systemctl suspend";
     sysc = "sudo vim ~sconf/configuration.nix";
-    usrc = "vim ~uconf/home.nix";
+    usrc = "nvim ~uconf/home.nix";
     sysu = "sudo nixos-rebuild switch";
     usru = "home-manager switch";
     garbage-collect = "sudo nix-collect-garbage -d && nix-collect-garbage -d ";

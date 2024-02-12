@@ -33,7 +33,7 @@
 
 			set formatoptions=bl
 
-			map <C-E> :e %:p:h<CR>
+			nmap S :e %:p:h<CR>
 
             colorscheme sorbet
         '';
@@ -67,7 +67,7 @@
     virt-manager
     # programming
     zig
-    cargo
+	rustup
     gcc
 
     # # Adds the 'hello' command to your environment. It prints a friendly
@@ -138,4 +138,5 @@
   programs.urxvt = import ./urxvt.nix;
   programs.neovim = import ./neovim.nix pkgs;
   programs.git = import ./git.nix pkgs;
+  programs.lf = import ./lf.nix;
 }

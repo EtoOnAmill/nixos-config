@@ -10,7 +10,8 @@ vim.cmd.colorscheme("slate")
 vim.opt.textwidth = 0
 vim.opt.scrolloff = 8
 vim.opt.formatoptions = "blj"
-vim.keymap.set("n", "<C-E>", ":e %:p:h<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "S", "<CMD>Oil<CR>", {noremap = true, silent = true})
+vim.opt.expandtab = true
 
 local function str2obj(str)
 	-- this would usually need ("return " .. str) 
