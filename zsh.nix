@@ -52,8 +52,8 @@
   shellAliases = {
     ll = "ls -hl";
     la = "ls -hla";
-	dupk = "kitty &";
-	dupu = "urxvt &";
+    dupk = "kitty &";
+    dupu = "urxvt &";
     lsdisk = "lsblk";
     memory = "df -hT";
     nv = "nvim ./";
@@ -62,7 +62,7 @@
     sysc = "sudo vim ~sconf/configuration.nix";
     usrc = "nvim ~uconf/home.nix";
     sysu = "sudo nixos-rebuild switch";
-    usru = "home-manager switch";
+    usru = "nix-channel --update && home-manager switch";
     garbage-collect = "sudo nix-collect-garbage -d && nix-collect-garbage -d ";
   };
 }

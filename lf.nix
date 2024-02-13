@@ -8,6 +8,5 @@
 		o = "&mkdir _newfolder";
 		i = "&touch _newfile";
 		x = "cut";
-		l = "&{{ cd $f || nvim $f }}";
 	};
 }
