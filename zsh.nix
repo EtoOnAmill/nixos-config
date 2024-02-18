@@ -57,7 +57,7 @@
     lsdisk = "lsblk";
     memory = "df -hT";
     nv = "nvim ./";
-    nixsp = "nix-shell -p";
+    nisp = "nix-shell -p";
     suspend = "systemctl suspend";
     sysc = "sudo vim ~sconf/configuration.nix";
     usrc = "nvim ~uconf/home.nix";

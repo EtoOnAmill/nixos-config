@@ -1,6 +1,7 @@
 { pkgs, lib, ... }: {
 	enable = true;
-	viAlias = true;
+	viAlias = false;
+	vimAlias = false;
 	coc.enable = false;
 	/*
 	extraConfig = ''

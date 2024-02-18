@@ -83,10 +83,12 @@
       source = ./nvim;
       recursive = true;
     };
+    /*
     ".config/bspwm" = {
       source = ./bspwm;
       recursive = true;
     };
+    */
     ".config/sxhkd" = {
       source = ./sxhkd;
       recursive = true;
@@ -110,6 +112,44 @@
   #
   home.sessionVariables = {
     EDITOR = "vim";
+  };
+
+  # keyboard configurations
+  home.keyboard.layout = "it";
+  home.keyboard.variant = "nodeadkey";
+  home.keyboard.options = [ "caps:super" "caps:none" ];
+
+  # xsession options
+  xsession = {
+    enable = true;
+    windowManager.bspwm = {
+      enable = true;
+      monitors = {
+        eDP-1-1 = [ "I" "II" "III" "IV" "V" "VI" "VII" "VIII" "IX" "X" ];
+      };
+      extraConfigEarly = '' 
+          pgrep -x sxhkd >/dev/null || sxhkd &
+          xrandr --output eDP-1-1 --mode 1920x1080
+          xrandr --output eDP-1-1 --brightness 0.8
+      '';
+      extraConfig = "kitty &";
+      rules = {
+        ".gscreenshot-wrapped" = { state = "floating"; };
+      };
+      settings = {
+        border_width = 2;
+        window_gap = 3;
+
+        top_padding = 0;
+        bottom_padding = 0;
+        left_padding = 0;
+        right_padding = 0;
+
+        split_ratio = 0.5;
+        borderless_monocle = true;
+        gapless_monocle = true;
+      };
+    };
   };
 
   # Let Home Manager install and manage itself.
