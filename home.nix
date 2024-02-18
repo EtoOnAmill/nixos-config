@@ -160,4 +160,5 @@
   programs.neovim = import ./neovim.nix pkgs;
   programs.git = import ./git.nix pkgs;
   programs.lf = import ./lf.nix;
+  services.sxhkd = import ./sxhkd.nix;
 }
