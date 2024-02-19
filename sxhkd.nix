@@ -5,7 +5,7 @@
       "super + Escape" = "pkill -USR1 -x sxhkd";
 
 # launch terminal
-      "super + @space" = "kitt";
+      "super + @space" = "urxvt";
 
 # launch firefox
       "super + Tab" = "firefox";

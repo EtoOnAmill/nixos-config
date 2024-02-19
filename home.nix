@@ -29,6 +29,7 @@
 	set scrolloff=8
 	syntax enable
 	set formatoptions=bl
+	set t_ut=""
 	nmap S :e %:p:h<CR>
 	colorscheme sorbet
       '';
