@@ -33,10 +33,10 @@ iI1Ll|!
 
   */
   fonts = [
-    "xft:LilexExtraThickNerdFont-Regular:size=17"
+    "xft:CaskaydiaCoveNerdFontMono-Bold:size=18"
 
     "xft:HurmitNerdFontMono-Bold:size=17"
-    "xft:CaskaydiaCoveNerdFontMono-Bold:size=18"
+    "xft:LilexExtraThickNerdFont-Regular:size=17"
     "xft:BlexMonoNerdFont-Text:size=18"
     "xft:GeistMonoNerdFontMono:size=17"
 

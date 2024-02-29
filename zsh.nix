@@ -52,16 +52,16 @@
   shellAliases = {
     ll = "ls -hl";
     la = "ls -hla";
-    dupk = "kitty &";
-    dupu = "urxvt &";
+    split-k = "kitty &";
+    split-u = "urxvt &";
     lsdisk = "lsblk";
     memory = "df -hT";
     nisp = "nix-shell -p";
     suspend = "systemctl suspend";
     usrc = "vim ~uconf/home.nix";
     usru = "home-manager switch";
-    sysc = "sudo vim ~sconf/configuration.nix";
-    sysu = "sudo nixos-rebuild switch";
+    sysc = "vim ~uconf/sysconfig/configuration.nix";
+    sysu = "sudo rm /etc/nixos/* && sudo cp ~uconf/sysconfig/* /etc/nixos && sudo nixos-rebuild switch";
     chann-u = "nix-channel --update && sudo nix-channel --update";
     garbage-collect = "sudo nix-collect-garbage -d && nix-collect-garbage -d ";
   };
