@@ -23,6 +23,7 @@
       vimrcConfig.customRC = ''
         set autoindent
 	set tabstop=4
+    set expandtab
 	set textwidth=0
 	set number
 	set relativenumber
@@ -30,7 +31,8 @@
 	syntax enable
 	set formatoptions=bl
 	set t_ut=""
-	nmap S :e %:p:h<CR>
+    set hlsearch
+	nmap <C-S> :e %:p:h<CR>
 	colorscheme sorbet
       '';
     })
@@ -115,10 +117,12 @@
     EDITOR = "vim";
   };
 
+  /*
   # keyboard configurations
   home.keyboard.layout = "it";
   home.keyboard.variant = "nodeadkey";
   home.keyboard.options = [ "caps:super" "caps:none" ];
+  */
 
   # xsession options
   xsession = {

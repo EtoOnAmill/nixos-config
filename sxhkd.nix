@@ -40,7 +40,7 @@
       "super + alt + x" = "bspc quit";
 
 # kill window
-      "super + {_,control +}x" = "bspc node -{c,k}";
+      "super + {_,control +}x ; super + {_,control +}x " = "bspc node -{c,k}";
 
 # alternate between tile and fullscreen
       "super + f" = "bspc desktop -l next";

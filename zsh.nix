@@ -56,13 +56,13 @@
     dupu = "urxvt &";
     lsdisk = "lsblk";
     memory = "df -hT";
-    nv = "nvim ./";
     nisp = "nix-shell -p";
     suspend = "systemctl suspend";
+    usrc = "vim ~uconf/home.nix";
+    usru = "home-manager switch";
     sysc = "sudo vim ~sconf/configuration.nix";
-    usrc = "nvim ~uconf/home.nix";
     sysu = "sudo nixos-rebuild switch";
-    usru = "nix-channel --update && home-manager switch";
+    chann-u = "nix-channel --update && sudo nix-channel --update";
     garbage-collect = "sudo nix-collect-garbage -d && nix-collect-garbage -d ";
   };
 }

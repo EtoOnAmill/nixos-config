@@ -1,5 +1,5 @@
 { pkgs, lib, ... }: {
-	enable = true;
+	enable = false;
 	viAlias = false;
 	vimAlias = false;
 	coc.enable = false;

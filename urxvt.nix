@@ -16,14 +16,34 @@
     "background" = "#1E2430";
     "cursorColor" = "#FFFFFF";
   };
+  /*
+  font stress test
+
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+`[]+',.-#~@\
+{}*?;:_°^¸/()|$%&=!"°
+(=)[=]{=}<=>
+-+*~
+-=> 
+1234567890
+oO0Q
+iI1Ll|!
+9q
+
+  */
   fonts = [
-    "xft:HurmitNerdFont:size=16"
-    "xft:AnonymiceProNerdFontMono-Bold:size=18"
-    "xft:CaskaydiaCoveNerdFontMono-Bold:size=15"
-    "xft:MartianMonoNerdFontMono-Regular:size=15"
-    "xft:MonoidNerdFont-Regular:size=15"
-    "xft:BlexMonoNerdFont-Text:size=16"
-    "xft:DaddyTimeMonoNerdFontMono-Regular:size=15"
-    "xft:LilexExtraThickNerdFont-Regular:size=15"
+    "xft:LilexExtraThickNerdFont-Regular:size=17"
+
+    "xft:HurmitNerdFontMono-Bold:size=17"
+    "xft:CaskaydiaCoveNerdFontMono-Bold:size=18"
+    "xft:BlexMonoNerdFont-Text:size=18"
+    "xft:GeistMonoNerdFontMono:size=17"
+
+    "xft:MartianMonoNerdFontMono-Regular:size=17"
+    "xft:MonoidNerdFont-Regular:size=17"
+
+    "xft:AnonymiceProNerdFontMono-Bold:size=20"
+    "xft:DaddyTimeMonoNerdFontMono-Regular:size=17"
   ];
 }

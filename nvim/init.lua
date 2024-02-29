@@ -5,7 +5,7 @@ vim.opt.mouse = ""
 vim.opt.hlsearch = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.cmd.colorscheme("slate")
 vim.opt.textwidth = 0
 vim.opt.scrolloff = 8
