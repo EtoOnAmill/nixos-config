@@ -6,10 +6,4 @@
 		credential.helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
 		safe.directory = "/etc/nixos";
 	};
-	/*
-	signing = {
-		signByDefault = true;
-		key = "A5AD00D2ECFD7409";
-	};
-	*/
 }

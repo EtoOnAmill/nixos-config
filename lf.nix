@@ -9,4 +9,7 @@
 		i = "&touch _newfile";
 		x = "cut";
 	};
+    settings = {
+        hidden = true;
+    };
 }

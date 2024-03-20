@@ -18,24 +18,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    (vim_configurable.customize {
-      name = "vim";
-      vimrcConfig.customRC = ''
-        set autoindent
-	set tabstop=4
-    set expandtab
-	set textwidth=0
-	set number
-	set relativenumber
-	set scrolloff=8
-	syntax enable
-	set formatoptions=bl
-	set t_ut=""
-    set hlsearch
-	nmap <C-S> :e %:p:h<CR>
-	colorscheme sorbet
-      '';
-    })
     # for lazyvim
     ripgrep
     fd
@@ -86,12 +68,9 @@
       source = ./nvim;
       recursive = true;
     };
-    /*
-    ".config/bspwm" = {
-      source = ./bspwm;
-      recursive = true;
+    ".vimrc" = {
+      source = ./vimrc;
     };
-    */
     ".config/sxhkd" = {
       source = ./sxhkd;
       recursive = true;
@@ -162,6 +141,7 @@
   programs.zsh = import ./zsh.nix;
   programs.kitty = import ./kitty.nix;
   programs.urxvt = import ./urxvt.nix;
+  programs.vim = import ./vim.nix;
   programs.neovim = import ./neovim.nix pkgs;
   programs.git = import ./git.nix pkgs;
   programs.lf = import ./lf.nix;

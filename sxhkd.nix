@@ -19,6 +19,10 @@
 # screenshots
       "Print" = "gscreenshot";
 
+# change keyboard language
+      "super + shift + z" = "setxkbmap rs latinunicodeyz";
+      "super + z" = "setxkbmap it";
+
 # console scratchpad
       "super + c" = "/home/etonit/.config/sxhkd/openScratchpad.sh";
 

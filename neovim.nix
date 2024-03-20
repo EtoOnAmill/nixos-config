@@ -1,5 +1,5 @@
 { pkgs, lib, ... }: {
-	enable = false;
+	enable = true;
 	viAlias = false;
 	vimAlias = false;
 	coc.enable = false;
@@ -17,7 +17,7 @@
 	'';
 	*/
 	plugins = with pkgs.vimPlugins; [
-		lazy-nvim
-		nvim-treesitter.withAllGrammars
-	];
+      lazy-nvim
+      oil-nvim
+    ];
 }

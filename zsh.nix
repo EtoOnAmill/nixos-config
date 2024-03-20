@@ -1,6 +1,6 @@
 {
   enable = true;
-  enableAutosuggestions = true;
+  autosuggestion.enable = true;
   enableCompletion = true;
 
   # plugin managers
@@ -49,19 +49,20 @@
   sessionVariables = {
     GCM_CREDENTIAL_STORE = "gpg";
   };
+
   shellAliases = {
     ll = "ls -hl";
     la = "ls -hla";
-    split-k = "kitty &";
-    split-u = "urxvt &";
+    ksplit = "kitty --detach &";
+    usplit = "urxvt &";
     lsdisk = "lsblk";
     memory = "df -hT";
     nisp = "nix-shell -p";
     suspend = "systemctl suspend";
     usrc = "vim ~uconf/home.nix";
     usru = "home-manager switch";
-    sysc = "vim ~uconf/sysconfig/configuration.nix";
-    sysu = "sudo rm /etc/nixos/* && sudo cp ~uconf/sysconfig/* /etc/nixos && sudo nixos-rebuild switch";
+    sysc = "sudo vim /etc/nixos/configuration.nix";
+    sysu = "sudo nixos-rebuild switch";
     chann-u = "nix-channel --update && sudo nix-channel --update";
     garbage-collect = "sudo nix-collect-garbage -d && nix-collect-garbage -d ";
   };
