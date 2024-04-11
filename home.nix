@@ -37,6 +37,7 @@
     pavucontrol
     audacious
     # gui
+    spotify
     firefox
     bspwm
     sxhkd
@@ -116,7 +117,7 @@
           xrandr --output eDP-1-1 --mode 1920x1080
           xrandr --output eDP-1-1 --brightness 0.8
       '';
-      extraConfig = "kitty &";
+      extraConfig = "urxvt &";
       rules = {
         ".gscreenshot-wrapped" = { state = "floating"; };
       };

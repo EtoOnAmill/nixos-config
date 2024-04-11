@@ -1,6 +1,7 @@
 set number
 set relativenumber
 set autoindent
+set showcmd
 set mouse=""
 set hlsearch
 set tabstop=4

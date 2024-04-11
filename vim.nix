@@ -4,6 +4,6 @@
   plugins = [];
   extraConfig = 
   ''
-    autocmd BufEnter * source ${builtins.toString ./vimrc}
+    autocmd BufReadPost * source ${builtins.toString ./vimrc}
   '';
 }

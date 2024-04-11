@@ -50,7 +50,7 @@
       "super + f" = "bspc desktop -l next";
 
 # swap with current biggest window
-      "super + s" = "bspc node -s biggest.window";
+      "super + s" = "spotify";
 
 # change focus in the given direction
       "super + {h,j,k,l}" = "bspc node -f {west,south,north,east}";
